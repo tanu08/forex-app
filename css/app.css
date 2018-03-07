@@ -82,4 +82,13 @@ html, body {
 .live-currency-info {
 	text-align: center;
 	padding: 20px;
-    font-size: 15px;}
+    font-size: 15px;
+}
+
+.center-panel  {
+    height: 100%;
+}
+
+#chart-container {
+    height: 80%;
+}
