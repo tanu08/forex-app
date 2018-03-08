@@ -119,7 +119,7 @@ function getLiveForexInfo() {
 					var percentageChange = Math.abs(((value - currentValue) / currentValue) * 100).toFixed(3);
 					var increased = value > currentValue ? true : false;
 					if(percentageChange > 0.001) {
-						ele.find('.percentage-change').removeClass('increase decrease').text(percentageChange);
+						ele.find('.percentage-change').removeClass('increase decrease').text(percentageChange + '%');
 						increased ? ele.find('.percentage-change').addClass('increase') : ele.find('.percentage-change').addClass('decrease');
 					}
 				}
