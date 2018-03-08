@@ -3,6 +3,7 @@
 <head>
 	<title>Foreign Exchange Prediction App</title>
 	<link href="css/app.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/jquery-ui.css">
 </head>
 <body>
 
@@ -15,31 +16,31 @@
 	<div class="main-container">
 		<div class="top-panel">
 			<ul class="currency-listing">
-				<li class="currency-pair-container selected" data-pair="USDGBP">
+				<li class="currency-pair-container selected" data-pair="USDGBP" data-widget-id="971451597262761984">
 					<div class="currency-pair-title">USD/GBP</div>
 					<div class="live-currency-info"></div>
 				</li>
-				<li class="currency-pair-container" data-pair="USDJPY">
+				<li class="currency-pair-container" data-pair="USDJPY" data-widget-id="971450524443619328">
 					<div class="currency-pair-title">USD/JPY</div>
 					<div class="live-currency-info"></div>
 				</li>
-				<li class="currency-pair-container" data-pair="USDEUR">
+				<li class="currency-pair-container" data-pair="USDEUR" data-widget-id="971451058613469184">
 					<div class="currency-pair-title">USD/EUR</div>
 					<div class="live-currency-info"></div>
 				</li>
-				<li class="currency-pair-container" data-pair="USDAUD">
+				<li class="currency-pair-container" data-pair="USDAUD" data-widget-id="971451808525594624">
 					<div class="currency-pair-title">USD/AUD</div>
 					<div class="live-currency-info"></div>
 				</li>
-				<li class="currency-pair-container" data-pair="USDCAD">
+				<li class="currency-pair-container" data-pair="USDCAD" data-widget-id="971452014029717504">
 					<div class="currency-pair-title">USD/CAD</div>
 					<div class="live-currency-info"></div>
 				</li>
-				<li class="currency-pair-container" data-pair="USDSGD">
+				<li class="currency-pair-container" data-pair="USDSGD" data-widget-id="971452367471222784">
 					<div class="currency-pair-title">USD/SGD</div>
 					<div class="live-currency-info"></div>
 				</li>
-				<li class="currency-pair-container" data-pair="USDCNY">
+				<li class="currency-pair-container" data-pair="USDCNY" data-widget-id="971471902903492608">
 					<div class="currency-pair-title">USD/CNY</div>
 					<div class="live-currency-info"></div>
 				</li>
@@ -47,14 +48,26 @@
 		</div>
 
 		<div class="center-panel">
-				<div class='charting-options'></div>			
+				<div class='charting-options'>
+					<div class="date-picker-container">
+						<label for="from-date" class="from-date">From: </label>
+						<input type="text" id="from-date" name="from">
+						<label for="to-date" class="to-date">To: </label>
+						<input type="text" id="to-date" name="to">
+					</div>
+					<div class="chart-types">
+						<button class="line ui-state-active">Line</button>
+						<button class="bar">Bar</button>
+					</div>
+				</div>			
 				<div id='chart-container'></div>
 		</div>
 	</div>
-
+          
 </div>
 
 	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="js/underscore.min.js" type="text/javascript"></script>
 	<script src="js/highcharts.js" type="text/javascript"></script>
 	<script src="js/moment.js" type="text/javascript"></script>

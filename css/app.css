@@ -50,7 +50,8 @@ html, body {
     display: inline-block;
     min-height: 100px;
     width: 120px;
-    border: 1px solid #222;
+    border: 1px solid aqua;
+    border-radius: 10px;
     margin-right: 17px;
     background-color: #111111;
     cursor: pointer;
@@ -62,6 +63,7 @@ html, body {
 
 .currency-pair-container.selected {
 	cursor: default;
+	border-color: yellowgreen;
 }
 
 .currency-pair-container.selected .currency-pair-title {
@@ -77,6 +79,8 @@ html, body {
     padding: 8px;
     background-color: rgba(32, 117, 195, 0.8);
     font-size: 14px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .live-currency-info {
@@ -86,9 +90,58 @@ html, body {
 }
 
 .center-panel  {
-    height: 100%;
+    margin-top: 15px;
 }
 
 #chart-container {
-    height: 80%;
+    height: 65%;
+    margin-top: 50px;
+}
+
+.charting-options {
+	height: 25px;
+    padding: 5px;
+    background-color: rgb(0, 42, 49);
+}
+
+.twitter-timeline {
+	text-decoration: none;
+    font-size: 22px;
+    color: aquamarine;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+}
+.date-picker-container {
+	display: inline-block;
+	padding-left: 16px;
+}
+
+label.to-date {
+	margin-left: 20px;
+}
+
+/* Jquery-ui overrides */
+.ui-controlgroup > .ui-controlgroup-item {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3px 20px;
+    font-size: 15px;
+    border-radius: 0px;
+}
+
+.ui-controlgroup {
+	display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.ui-state-active {
+	background-color: rgba(34, 224, 5, 0.8) !important;
+    border: 1px solid rgba(34, 224, 5, 0.8) !important;
+}
+
+.ui-controlgroup-item:focus {
+	outline: none !important; 
 }
