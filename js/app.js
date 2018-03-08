@@ -2,7 +2,6 @@
 var API_KEY = "54e970ef46ec4eb4c2e5c076e3c21db5";
 var BASE_URL = "http://apilayer.net/api";
 var currencies = "GBP,AUD,CAD,JPY,EUR,SGD,CNY";
-http://apilayer.net/api/timeframe?access_key=54e970ef46ec4eb4c2e5c076e3c21db5&start_date=2018-02-01&end_date=2018-03-01&currencies=CNY
 
 /* APIs from https://currencylayer.com/documentation 
 
