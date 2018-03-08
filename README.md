@@ -43,7 +43,14 @@ Serving the web-app would need a web-server. Any web-server would do, we'll use 
      certfile = '/Users/<username>/Desktop/certs/cert.pem'
     ```
     Save the file after editing the file paths for cert.pem and key.pem (created in step:2 above) correctly.
-4. ### That's it! 
+    
+4. ### Run the server
+   We'll be running Python's in-built SimpleHTTPServer for our testing. The server.py file is for doing this job.
+   Run the following command from the root directory of the web-app:
+   ```
+   python server.py
+   ```
+5. ### That's it! 
     Now navigate to the below url in your favorite browser and you should see the web-application:
     ```
     https://localhost:4443/index.html
